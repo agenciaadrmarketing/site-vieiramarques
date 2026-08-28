@@ -26,7 +26,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="preload" as="image" href="uploads/hero.webp">
-<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600&amp;display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600&amp;display=swap" rel="stylesheet"></noscript>
 <style>
   html, body { margin: 0; padding: 0; background: #0B0B0B; }
   * { box-sizing: border-box; }
@@ -167,7 +169,7 @@
   <header style="position: sticky; top: 0; z-index: 60; background: rgba(11,11,11,0.94); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.12);">
     <div style="max-width: 1180px; margin: 0 auto; padding: 13px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px;">
       <a href="#" style="display: block;">
-        <img src="uploads/logo-vm.webp" fetchpriority="high" decoding="async" alt="Vieira &amp; Marques Sociedade de Advogados" class="logo-topo" style="height: 40px; width: auto; display: block; filter: invert(1);">
+        <img src="uploads/logo-vm.webp" width="700" height="156" fetchpriority="high" decoding="async" alt="Vieira &amp; Marques Sociedade de Advogados" class="logo-topo" style="height: 40px; width: auto; display: block; filter: invert(1);">
       </a>
       <a href="{{ waLink }}" target="_blank" rel="noopener" class="cta-topo" style="background: #1EA94F; color: #FFFFFF; padding: 12px 22px; border-radius: 3px; font-size: 14px; font-weight: 600; white-space: nowrap;" style-hover="background: #25C45C; color: #FFFFFF;">Falar no WhatsApp</a>
     </div>
@@ -482,7 +484,7 @@
   <footer style="background: #050505; border-top: 1px solid rgba(255,255,255,0.1);">
     <div class="foot-grid" style="max-width: 1180px; margin: 0 auto; padding: 64px 24px 56px; display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 48px;">
       <div style="display: grid; gap: 26px; align-content: start;">
-        <img src="uploads/logo-vm.webp" loading="lazy" decoding="async" alt="Vieira &amp; Marques Sociedade de Advogados" style="width: 100%; max-width: 380px; height: auto; display: block; filter: invert(1);">
+        <img src="uploads/logo-vm.webp" width="700" height="156" loading="lazy" decoding="async" alt="Vieira &amp; Marques Sociedade de Advogados" style="width: 100%; max-width: 380px; height: auto; display: block; filter: invert(1);">
         <div style="display: flex; gap: 12px;">
           <a href="https://www.facebook.com/vieiraemarques.advogados" target="_blank" rel="noopener" aria-label="Facebook" style="width: 40px; height: 40px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.18); display: flex; align-items: center; justify-content: center;" style-hover="border-color: #FFFFFF;">
             <svg viewBox="0 0 24 24" width="17" height="17" fill="#EDEDED" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3h-3.1V8.2c0-.9.3-1.5 1.5-1.5h1.7V4c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2V10H7.5v3h2.7v8h3.3z"></path></svg>
