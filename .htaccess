@@ -23,3 +23,16 @@
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/css application/javascript text/javascript application/json image/svg+xml
 </IfModule>
+
+# Headers de segurança. Sem X-Frame-Options/CSP frame-ancestors de propósito:
+# esta página precisa continuar carregável dentro de um <iframe> de outra
+# origem (o editor visual do Claude Design usa isso para a pré-visualização
+# ao vivo) — ver site.js e o hybrid iframe-detection.
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+Options -Indexes
