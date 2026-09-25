@@ -34,6 +34,7 @@
         link_url: link.href,
         link_text: (link.textContent || "").trim()
       });
+      window.dataLayer.push({ event: "lead_form_submitted" });
     }
   });
 
